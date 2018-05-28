@@ -8,8 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <script src=""></script>
     <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
     <title>My First Website</title>
   </head>
   <body>
@@ -29,61 +31,81 @@
 
         </div>
         <div id="banner-head">
+          <div id="logo">
+            <img src="logo.png" alt="bird">
+          </div>
           <h1>Bird asset Ltd </h1>
           <h3>Your choise - Our responsibility</h3>
           <p> Lorem ipsum dolor sit amet, consectetur
              adipisicing elit. Voluptatibus explicabo.</p>
+
              <div id="info">
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus suscipit corporis, necessitatibus amet quaerat. Eaque aspernatur esse modi dolore nulla aliquam autem ullam, fuga, accusamus soluta officia excepturi, labore. Eveniet.
+               <div class="container">
+               <form>
+                 <label for="uname">Username:</label>
+                 <input type="text" placeholder="Enter Username" name="uname" required>
+
+                 <label for="psw">Password:&nbsp;</label>
+                 <input type="password" placeholder="Enter Password" name="psw" required>
+
+                 <button type="submit">Login</button>&nbsp;&nbsp;&nbsp;
+                 <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                 </label>
+             </form>
+           </div>
              </div>
-            <div id="logo">
-              <img src="logo.png" alt="bird">
-            </div>
         </div>
+
       </header>
       <nav>
-          <ul>
-            <a href="index.html"><li>Home</li></a>
-            <a href="offer.html"><li class="active">Offer</li></a>
-            <a href="shop.html"><li>Shop</li></a>
-            <a href="about.html"><li>About</li></a>
-            <a href="contact.html"><li>Contact</li></a>
-          </ul>
-      </nav>
-
-      <section>
-      <h2>Lorem Ipsum</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Assumenda, facilis autem, consequatur <br> doloremque quisquam voluptas
-         quasi dolores cum. Nihil dolor dolorem molestiae dolores quis est
-         ex harum blanditiis cumque expedita.</p>
+           <ul>
+             <a href="index.html"><li>Home</li></a>
+             <a href="offer.html"><li class="active">Offer</li></a>
+             <a href="shop.html"><li>Shop</li></a>
+             <a href="about.html"><li>About</li></a>
+             <a href="contact.html"><li>Contact</li></a>
+           </ul>
+       </nav>
+      <div class="side">
+      <section class="main-section">
+          <div class="offerts">
+              <i class="fab fa-adversal"></i>
+              <p class="text-offerts">Sed congue sodales metus, id rhoncus nisi fermentum vitae.
+                Maecenas fringilla urna non nisi egestas malesuada.
+                 Sed condimentum gravida mollis. Nulla placerat
+                 porttitor lacus vitae gravida. Integer tincidunt
+                 pretium consectetur. Cras hendrerit magna dolor,
+                 quis mollis nulla vestibulum quis.
+                 Nullam bibendum sit amet mauris a iaculis.</p>
+               <button class='offerts-btn'>Read More </button>
+          </div>
+          <div class="offerts">
+            <i class="fas fa-certificate"></i>
+            <p class="text-offerts">Sed congue sodales metus, id rhoncus nisi fermentum vitae.
+              Maecenas fringilla urna non nisi egestas malesuada.
+               Sed condimentum gravida mollis. Nulla placerat
+               porttitor lacus vitae gravida. Integer tincidunt
+               pretium consectetur. Cras hendrerit magna dolor,
+               quis mollis nulla vestibulum quis.
+               Nullam bibendum sit amet mauris a iaculis.</p>
+              <button class='offerts-btn'>Read More </button>
+          </div>
+          <div class="offerts">
+            <i class="fas fa-id-card"></i>
+            <p class="text-offerts">Sed congue sodales metus, id rhoncus nisi fermentum vitae.
+              Maecenas fringilla urna non nisi egestas malesuada.
+               Sed condimentum gravida mollis. Nulla placerat
+               porttitor lacus vitae gravida. Integer tincidunt
+               pretium consectetur. Cras hendrerit magna dolor,
+               quis mollis nulla vestibulum quis.
+               Nullam bibendum sit amet mauris a iaculis.</p>
+             <button class='offerts-btn'>Read More </button>
+          </div>
       </section>
-
-      <article>
-          <form action="">
-      <div>
-            <h2>Subscribe to our newsletter</h2>
-            <p> Be the first one to receive our exclusive news</p>
-       </div>
-       <div>
-            <input type="text" placeholder="Name" required>
-            <input type="text" placeholder="Email" required>
-            <button type="submit"><i class="fa fa-newspaper-o"></i> Subscribe</button>
-       </div>
-        </form>
-      </article>
-
-      <aside>
-        <h3>Lorem Ipusm</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-           Vitae deserunt distinctio et optio obcaecati explicabo aperiam,
-            doloribus expedita consequuntur, dicta voluptatem asperiores autem
-            excepturi fugiat delectus, est dignissimos quasi harum.</p>
-      </aside>
-
+    </div>
       <footer>
       Copyright &copy; Author 2018
       </footer>
-    </div>
   </body>
 </html>

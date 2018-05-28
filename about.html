@@ -8,8 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <script src=""></script>
     <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
     <title>My First Website</title>
   </head>
   <body>
@@ -29,61 +31,151 @@
 
         </div>
         <div id="banner-head">
+          <div id="logo">
+            <img src="logo.png" alt="bird">
+          </div>
           <h1>Bird asset Ltd </h1>
           <h3>Your choise - Our responsibility</h3>
           <p> Lorem ipsum dolor sit amet, consectetur
              adipisicing elit. Voluptatibus explicabo.</p>
+
              <div id="info">
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus suscipit corporis, necessitatibus amet quaerat. Eaque aspernatur esse modi dolore nulla aliquam autem ullam, fuga, accusamus soluta officia excepturi, labore. Eveniet.
+               <div class="container">
+               <form>
+                 <label for="uname">Username:</label>
+                 <input type="text" placeholder="Enter Username" name="uname" required>
+
+                 <label for="psw">Password:&nbsp;</label>
+                 <input type="password" placeholder="Enter Password" name="psw" required>
+
+                 <button type="submit">Login</button>&nbsp;&nbsp;&nbsp;
+                 <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                 </label>
+             </form>
+           </div>
              </div>
-            <div id="logo">
-              <img src="logo.png" alt="bird">
-            </div>
         </div>
+
       </header>
       <nav>
-          <ul>
-            <a href="index.html"><li>Home</li></a>
-            <a href="offer.html"><li>Offer</li></a>
-            <a href="shop.html"><li>Shop</li></a>
-            <a href="about.html"><li class="active">About</li></a>
-            <a href="contact.html"><li>Contact</li></a>
-          </ul>
-      </nav>
-
+      <ul>
+        <a href="index.html"><li>Home</li></a>
+        <a href="offer.html"><li>Offer</li></a>
+        <a href="shop.html"><li>Shop</li></a>
+        <a href="about.html"><li class="active">About</li></a>
+        <a href="contact.html"><li>Contact</li></a>
+      </ul>
+  </nav>
+      <div class="side">
       <section>
-      <h2>Lorem Ipsum</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Assumenda, facilis autem, consequatur <br> doloremque quisquam voluptas
-         quasi dolores cum. Nihil dolor dolorem molestiae dolores quis est
-         ex harum blanditiis cumque expedita.</p>
+        <img src="logo.png" alt="brand logo">
+        <h2 id='brand-text'>Bird asset Ltd</h2>
+        <h4 id='brand-small-text'>Your choise - Our responsibility </h4>
+
+        <div class="about-text">
+          <h2>About Us</h2>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Distinctio voluptates eligendi officia debitis fuga expedita vitae in
+          voluptatem suscipit cumque. Obcaecati possimus neque, temporibus, quos placeat,
+           consequatur error maiores officiis, obcaecati possimus neque, temporibus, quos placeat,
+            consequatur error maiores officiis omnis necessitatibus vitae adipisci cupiditate
+           similique mollitia qui quaerat, voluptate ea! Alias voluptatem numquam distinctio,
+            enim officia provident vero, qui fuga consequatur laborum. Veritatis vitae quibusdam
+             optio, rem quos libero, molestias aperiam. Nam ullam quidem, quis repellendus cum
+              quibusdam libero, deleniti aut blanditiis numquam totam voluptatibus asperiores
+              tenetur amet quia error? Commodi nam cum reprehenderit incidunt eveniet alias rerum
+              quos repellendus, molestias laborum omnis. Incidunt vel dignissimos error mollitia
+               quaerat?
+        </div>
+        <div class="about-tables">
+          <h2>Our contracts</h2>
+            <table>
+              <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+              </tr>
+              <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+              </tr>
+              <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+              </tr>
+              <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+              </tr>
+              <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+              </tr>
+              <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+              </tr>
+              <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
+              </tr>
+            </table>
+        </div>
       </section>
-
-      <article>
-          <form action="">
-      <div>
-            <h2>Subscribe to our newsletter</h2>
-            <p> Be the first one to receive our exclusive news</p>
-       </div>
-       <div>
-            <input type="text" placeholder="Name" required>
-            <input type="text" placeholder="Email" required>
-            <button type="submit"><i class="fa fa-newspaper-o"></i> Subscribe</button>
-       </div>
-        </form>
-      </article>
-
-      <aside>
-        <h3>Lorem Ipusm</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-           Vitae deserunt distinctio et optio obcaecati explicabo aperiam,
-            doloribus expedita consequuntur, dicta voluptatem asperiores autem
-            excepturi fugiat delectus, est dignissimos quasi harum.</p>
-      </aside>
-
+      <section>
+        <div style='height: 5px; clear: both'>
+        </div>
+        <div>
+        <div id="h2-opinion">
+            <h2 >Opinions About us</h2>
+          </div>
+            <div>
+              <div class="opinion">
+                <h4>company name</h4>
+                <img src="opin.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias excepturi, consectetur ipsam aut quas, rerum sequi vel sapiente a alias temporibus enim, nam dolor quisquam qui in, consequatur architecto distinctio.</p>
+                <a href="">read more</a>
+              </div>
+              <div class="opinion">
+                <h4>company name</h4>
+                <img src="opin.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ab soluta delectus quidem minima. Accusantium eveniet perspiciatis, rem corporis, blanditiis harum facilis laudantium, doloribus ipsam asperiores debitis nam laborum. Esse.</p>
+                <a href="">read more</a>
+              </div>
+              <div class="opinion">
+                <h4>company name</h4>
+                <img src="opin.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad pariatur earum eveniet. Quasi aliquam, fuga dignissimos alias reiciendis dolorem! Id dolorum beatae placeat, omnis labore odit nulla voluptas dolor ab!</p>
+                <a href="">read more</a>
+              </div>
+              <div class="opinion">
+                <h4>company name</h4>
+                <img src="opin.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium esse itaque molestias, quaerat modi temporibus ad nulla a atque ex repudiandae commodi vitae ipsum possimus harum nisi autem dignissimos, veritatis.</p>
+                <a href="">read more</a>
+              </div>
+              <div class="opinion">
+                <h4>company name</h4>
+                <img src="opin.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil laboriosam pariatur adipisci quaerat corporis est accusantium perferendis distinctio expedita voluptatibus odit laborum eveniet, rerum optio veritatis non, repudiandae ipsum dolorem.</p>
+                <a href="">read more</a>
+              </div>
+            </div>
+        </div>
+      </section>
+      </div>
       <footer>
       Copyright &copy; Author 2018
       </footer>
-    </div>
+
+
+
   </body>
 </html>

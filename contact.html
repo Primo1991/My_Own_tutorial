@@ -8,8 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <script src=""></script>
     <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
     <title>My First Website</title>
   </head>
   <body>
@@ -29,62 +31,78 @@
 
         </div>
         <div id="banner-head">
+          <div id="logo">
+            <img src="logo.png" alt="bird">
+          </div>
           <h1>Bird asset Ltd </h1>
           <h3>Your choise - Our responsibility</h3>
           <p> Lorem ipsum dolor sit amet, consectetur
              adipisicing elit. Voluptatibus explicabo.</p>
+
              <div id="info">
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus suscipit corporis, necessitatibus amet quaerat. Eaque aspernatur esse modi dolore nulla aliquam autem ullam, fuga, accusamus soluta officia excepturi, labore. Eveniet.
+               <div class="container">
+               <form>
+                 <label for="uname">Username:</label>
+                 <input type="text" placeholder="Enter Username" name="uname" required>
+
+                 <label for="psw">Password:&nbsp;</label>
+                 <input type="password" placeholder="Enter Password" name="psw" required>
+
+                 <button type="submit">Login</button>&nbsp;&nbsp;&nbsp;
+                 <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                 </label>
+             </form>
+           </div>
              </div>
-            <div id="logo">
-              <img src="logo.png" alt="bird">
-            </div>
         </div>
+
       </header>
-      <nav>
-          <ul>
-            <a href="index.html"><li>Home</li></a>
-            <a href="offer.html"><li>Offer</li></a>
-            <a href="shop.html"><li>Shop</li></a>
-            <a href="about.html"><li>About</li></a>
-            <a href="contact.html"><li class="active">Contact</li></a>
-          </ul>
-      </nav>
+    <nav>
+      <ul>
+        <a href="index.html"><li>Home</li></a>
+        <a href="offer.html"><li>Offer</li></a>
+        <a href="shop.html"><li>Shop</li></a>
+        <a href="about.html"><li>About</li></a>
+        <a href="contact.html"><li class="active">Contact</li></a>
+    </ul>
+   </nav>
+      <div class="side">
+        <section>
+            <div>
+                <div class="contact">
+                  <h2>How to find us</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, atque!</p>
+                    <div class='contact-element'>
+                        <div class='type-of-contact'><a href="tel:777-999-777"><i class="fas fa-phone-square"></i> <span> 777-999-777</span></a></a></a></div>
+                        <div class='type-of-contact'><a href="http://www.twitter.com" target='_blank'><i class="fab fa-twitter-square"></i> <span> Bird.LTD</span></a></a></div>
+                        <div class='type-of-contact'><a href="mailto:info@birdasset.com?Subject=Basic%20Ask" target="_top"><i class="fas fa-envelope"></i> <span>info@birdasset.com</span></a></div>
+                    </div>
+                </div>
+                <div class="contact-form-page">
+                  <h3>Contact Form</h3>
+                    <div class="contact-form">
+                    <form action="">
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-      <section>
-      <h2>Lorem Ipsum</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Assumenda, facilis autem, consequatur <br> doloremque quisquam voluptas
-         quasi dolores cum. Nihil dolor dolorem molestiae dolores quis est
-         ex harum blanditiis cumque expedita.</p>
-      </section>
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                      <label for="subject">Subject</label>
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:100%; width: 90%;"></textarea>
 
-      <article>
-          <form action="">
-      <div>
-            <h2>Subscribe to our newsletter</h2>
-            <p> Be the first one to receive our exclusive news</p>
-       </div>
-       <div>
-            <input type="text" placeholder="Name" required>
-            <input type="text" placeholder="Email" required>
-            <button type="submit"><i class="fa fa-newspaper-o"></i> Subscribe</button>
-       </div>
-        </form>
-      </article>
-
-      <aside>
-        <h3>Lorem Ipusm</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-           Vitae deserunt distinctio et optio obcaecati explicabo aperiam,
-            doloribus expedita consequuntur, dicta voluptatem asperiores autem
-            excepturi fugiat delectus, est dignissimos quasi harum.</p>
-      </aside>
-
+                      <button type="submit">Submit</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </div>
       <footer>
       Copyright &copy; Author 2018
       </footer>
-    </div>
+
+
+
   </body>
 </html>
-s

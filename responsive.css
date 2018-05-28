@@ -1,0 +1,273 @@
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 1000px) {
+  body{
+    margin: 5px;
+  }
+  #banner-head {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+  #logo img{
+    width: 100px;
+    height: 85px;
+    position: absolute;
+    left: 40px;
+    top: 70px;
+
+  }
+  #banner-head h1{
+    position: absolute;
+    left: 140px;
+    top: 30px;
+  }
+  #banner-head h3{
+    position: absolute;
+    left: 140px;
+    top: 90px;
+  }
+  #banner-head p{
+    position: absolute;
+    left: 140px;
+    top: 110px;
+    max-width: 220px;
+  }
+
+  #social-text {
+    font-size: 10px;
+  }
+  #main-article {
+    width: 40%;
+  }
+  #main-aside {
+    width: 40%;
+  }
+  #shop-aside {
+    width: 32%;
+  }
+  #shop-section {
+    width: 68%;
+  }
+  #info {
+    position: absolute;
+    left: 520px;
+    top: 40px;
+  }
+  .about-text {
+    width: 50%;
+  }
+  .main-section{
+    width: 70%;
+  }
+ #h2-opinion  {
+ padding: 25px;
+ text-align: center;
+}
+}
+@media screen and (max-width: 800px) {
+#info {
+    position: absolute;
+    left: 370px;
+    top: 40px;
+  }
+
+#logo img{
+  width: 80px;
+  height: 65px;
+  position: absolute;
+  left: 80px;
+  top: 70px;
+
+}
+#banner-head h1{
+  position: absolute;
+  left: 160px;
+  top: 30px;
+}
+#banner-head h3{
+  position: absolute;
+  left: 160px;
+  top: 90px;
+}
+#banner-head p{
+  position: absolute;
+  left: 160px;
+  top: 110px;
+  max-width: 180px;
+}
+.offerts {
+  display: block;
+  position: relative;
+  width: 90%;
+  padding-bottom: 20px;
+  padding-top:10px;
+  border-bottom: 0.2px solid #ddd;
+}
+.offerts:last-child {
+  border-bottom: none;
+}
+.about-text {
+  min-width: 70%
+}
+.about-tables {
+min-width: 70%;
+}
+
+}
+@media only screen and (max-width:660px) {
+  /* For tablets: */
+  #social-text {
+    display:none;
+  }
+  #info {
+    position: absolute;
+    left: 230px;
+    top: 40px;
+  }
+
+#logo img{
+  width: 80px;
+  height: 65px;
+  position: absolute;
+  left: 80px;
+  top: 50px;
+
+}
+#banner-head h1{
+  position: absolute;
+  left: 60px;
+  top: 70px;
+}
+#banner-head h3{
+  position: absolute;
+  left: 35px;
+  top: 140px;
+}
+#banner-head p{
+display:none;
+}
+nav ul li{
+  font-size: 10px;
+}
+#shop-aside {
+  width: 24%;
+}
+#shop-aside .pay {
+  width: 100%;
+  height: auto;
+}
+#shop-aside #aside-text {
+  width:100%;
+}
+#shop-section {
+  width: 68%;
+}
+.about-text {
+  min-width: 90%
+}
+.about-tables {
+min-width: 90%;
+}
+.opinion{
+  height: 80px;
+}
+.opinion > a {
+  top: 105px;
+}
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  #info {
+    position: absolute;
+    width: 70%;
+    left: 50px;
+    top: 180px;
+  }
+
+#logo img{
+position: absolute;
+left: 145px;
+top: 40px;
+}
+#banner-head {
+  width: 100%;
+  height: 340px;
+}
+#banner-head h1{
+  position: absolute;
+  left: 120px;
+  top: 70px;
+}
+#banner-head h3{
+  position: absolute;
+  left: 90px;
+  top: 140px;
+}
+#banner-head p{
+display:none;
+}
+nav ul li{
+  font-size: 15px;
+  position: relative;
+  display: block;
+}
+nav {
+  display: block;
+}
+#main-article {
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+}
+#main-aside {
+  width: 90%;
+}
+#shop-aside {
+  width: 24%;
+  position: relative;
+}
+#shop-aside .pay {
+  width: 100%;
+  height: auto;
+}
+#shop-aside .bird {
+display: none;
+}
+#shop-aside #aside-text {
+  width:100%;
+}
+#shop-section {
+  width: 60%;
+}
+.opinion{
+  height: 160px;
+}
+.opinion > a {
+  top: 165px;
+}
+.opinion > p {
+  min-width: 100%;
+  padding: 0;
+}
+.contact, .contact-form-page {
+  clear: both;
+  min-width: 90%;
+  margin: 20px 10px;
+}
+.contact {
+  padding: 20px 00px 20px 10px;
+}
+.contact-form-page {
+  padding-right: 10px;
+}
+
+}
+
+@media only screen and (max-width:850px) {
+  .about-text {
+    width: 40%;
+  }
+  .about-tables {
+    width: 40%;
+  }
+}
